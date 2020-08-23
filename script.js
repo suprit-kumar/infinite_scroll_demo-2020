@@ -30,12 +30,10 @@ function imageLoaded() {
   
   // Create Elements For Links & Photos, Add to DOM
   function displayPhotos() {
-    console.log(photosArray);
     imagesLoaded = 0;
     totalImages = photosArray.length;
     // Run function for each object in photosArray
     photosArray.forEach((photo) => {
-      console.log('step2');
       // Create <a> to link to full photo
       const item = document.createElement('a');
       setAttributes(item, {
